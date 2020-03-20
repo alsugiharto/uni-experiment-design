@@ -1,23 +1,22 @@
-
 var shuffleSequence = seq("intro", sepWith("sep", seq("practice")), "startexp", sepWith("sep", rshuffle(startsWith("exp"), startsWith("control"))));
 
 var practiceItemTypes = ["practice"];
 
 var q = "Question";
 
-var defaults = [ "Separator", { transfer: 1000, normalMessage: "Please wait for the next sentence.", errorMessage: "Wrong. Please wait for the next sentence." },
-"Question", {hasCorrect: false, randomOrder: true, showNumbers: false}, "Message", { hideProgressBar: true } ];
+var defaults = [ "Separator", { transfer: 1000, normalMessage: "Please wait for the next question.", errorMessage: "Wrong. Please wait for the next question." },
+"Question", {hasCorrect: false, randomOrder: false, showNumbers: false}, "Message", { hideProgressBar: true } ];
 
 var items = [ ["sep", "Separator", { }],
 
 ["intro", "Form", { html: { include: "example_intro.html" } }],
 
 ["startexp", "Message", {html: "This is the end of the practice session. The experiment begins now."}],
-["practice", q, {q: "There are three practice items and this is the first one.",
-                 as: ["There are three practice items and this is the starting one.", "There are seven practice items and this is the last one."], hasCorrect: 0,
+["practice", q, {q: "<p>There are three practice items and this is the first one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/test1.png?raw=true\" alt=\"Italian Trulli\"></p>",
+                 as: ["1", "2", "3", "4", "5", "6", "7", "8"], hasCorrect: 0,
                  instructions: "Select the best paraphrase of the sentence."}],
-["practice", q, {q: "John is a bachelor.",
-                 as: ["John is an unmarried man.", "John is a married man."], hasCorrect: 0,
+["practice", q, {q: "<img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/test1.png?raw=true\" alt=\"Italian Trulli\">",
+                 as: ["1", "2", "3", "4", "5", "6", "7", "8"], hasCorrect: 0,
                  instructions: "Select the best paraphrase of the sentence."}],
 ["practice", q, {q: "There are three practice items and this is the last one.",
                  as: ["There are three practice items and this is the final one.", "There are three practice items and this is the first one."], hasCorrect: 0,
