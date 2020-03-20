@@ -1,0 +1,9 @@
+.Question-normal-answer{
+    display:inline;
+    margin: 10px;
+    border-style: groove;
+    width: 15%;
+    float: left;
+    text-align: center; !important
+    vertical-align: middle;
+}
