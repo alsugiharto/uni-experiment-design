@@ -13,13 +13,13 @@ var items = [ ["sep", "Separator", { }],
 
 ["startexp", "Message", {html: "This is the end of the practice session. The experiment begins now."}],
 ["practice", q, {q: "<p>There are three practice items and this is the first one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
-                 as: ["1", "2", "3", "4", "5", "6", "7", "8"], hasCorrect: false,
+                 as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
 ["practice", q, {q: "<p>There are three practice items and this is the second one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_2.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
-                 as: ["1", "2", "3", "4", "5", "6", "7", "8"], hasCorrect: false,
+                 as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
 ["practice", q, {q: "<p>There are three practice items and this is the last one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_3.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
-                 as: ["1", "2", "3", "4", "5", "6", "7", "8"], hasCorrect: false,
+                 as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
 
 
