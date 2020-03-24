@@ -4,7 +4,7 @@ var practiceItemTypes = ["practice"];
 
 var q = "Question";
 
-var defaults = [ "Separator", { transfer: 1000, normalMessage: "Please wait for the next question.", errorMessage: "Wrong. Please wait for the next question." },
+var defaults = [ "Separator", { transfer: 1000, normalMessage: "Please wait for the next question." },
 "Question", {hasCorrect: false, randomOrder: false, showNumbers: false}, "Message", { hideProgressBar: true } ];
 
 var items = [ ["sep", "Separator", { }],
@@ -12,16 +12,15 @@ var items = [ ["sep", "Separator", { }],
 ["intro", "Form", { html: { include: "example_intro.html" } }],
 
 ["startexp", "Message", {html: "This is the end of the practice session. The experiment begins now."}],
-["practice", q, {q: "<p>There are three practice items and this is the first one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
+["practice", q, {q: "<p>There are three practice items and this is the first one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video",
                  as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
-["practice", q, {q: "<p>There are three practice items and this is the second one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_2.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
+["practice", q, {q: "<p>There are three practice items and this is the second one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_2.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video",
                  as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
-["practice", q, {q: "<p>There are three practice items and this is the last one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_3.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click.</p>",
+["practice", q, {q: "<p>There are three practice items and this is the last one.</p><p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_3.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video",
                  as: ["1", "2", "3", "4"], hasCorrect: false,
                  instructions: ""}],
-
 
 [["exp-each-nopred-item1", 1], q, {q: "A maid polished each mirror.", as: ["Each mirror was polished by a possibly different maid.", "All the mirrors were polished by the same maid."]}],
 [["exp-every-nopred-item1", 1], q, {q: "A maid polished every mirror.", as: ["Each mirror was polished by a possibly different maid.", "All the mirrors were polished by the same maid."]}],
@@ -43,16 +42,16 @@ var items = [ ["sep", "Separator", { }],
 [["exp-each-respred-item4", 4], q, {q: "A gardener pruned each bush short.", as: ["Each bush was pruned by a possibly different gardener until it was short.", "All the bushes were pruned by the same gardener until they were short."]}],
 [["exp-every-respred-item4", 4], q, {q: "A gardener pruned every bush short.", as: ["Each bush was pruned by a possibly different gardener until it was short.", "All the bushes were pruned by the same gardener until they were short."]}],
 
-["control-item1", q, {q: "Only John was sick.", as: ["Nobody but John was sick.", "Everybody except John was sick."]}],
+["control-item1", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}],
 
-["control-item2", q, {q: "Each man drank a bottle of wine.", as: ["The men drank a bottle of wine each.", "The men drank a bottle of wine together."]}],
+["control-item2", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}],
 
-["control-item3", q, {q: "Each cook tasted a dessert.", as: ["The cooks tasted one dessert each.", "The cooks tasted one dessert together."]}],
+["control-item3", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}],
 
-["control-item4", q, {q: "The reviewers saw five movies in total.", as: ["The reviewers saw five movies each.", "The reviewers saw five movies together."]}],
+["control-item4", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}],
 
-["control-item5", q, {q: "Only one boy enjoyed the show on the beach.", as: ["Nobody but one boy enjoyed the show on the beach.", "Nobody enjoyed the show on the beach."]}],
+["control-item5", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}],
 
-["control-item6", q, {q: "Each elephant drank one bucket of water.", as: ["The elephants drank one bucket of water each.", "The elephants drank one bucket of water in total."]}]
+["control-item6", q, {q: "<p> <img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/practice_1.png?raw=true\" alt=\"Italian Trulli\"></p><p>Select the video you most likely click</p> <p>The number follows the order of the video.</p>", as: ["1", "2", "3", "4"]}]
 
 ];
