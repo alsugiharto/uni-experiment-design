@@ -7,7 +7,7 @@ function question_text(image_title) {
     question = "<p>";
         question += "<img src=\"https://github.com/alsugiharto/experiment-design/blob/master/images/" + image_title + ".png?raw=true\" alt=\"Italian Trulli\">";
     question += "</p>";
-    question += "<p>Select the video you most likely click.</p>";
+    question += "<p>Select the video you most likely click by selecting the number bellow.</p>";
     question += "<p>The number follows the order of the video.</p>";
     return question;
 }
@@ -18,7 +18,7 @@ var practiceItemTypes = ["practice"];
 
 var q = "Question";
 
-var defaults = [ "Separator", { transfer: 1000, normalMessage: "Please wait for the next question." },
+var defaults = [ "Separator", { transfer: 0, normalMessage: "Please wait for the next question." },
 "Question", {hasCorrect: false, randomOrder: false, showNumbers: false}, "Message", { hideProgressBar: true } ];
 
 var items = [ ["sep", "Separator", { }],
@@ -77,16 +77,28 @@ var items = [ ["sep", "Separator", { }],
 [["exp-emoji-withoutemoji-item8", 8], q, {q: question_text("practice_2"), as: answer}],
 
 
-["control-item1", q, {q: question_text("practice_2"), as: answer}],
+["control-item1", q, {q: question_text("practice_3"), as: answer}],
 
-["control-item2", q, {q: question_text("practice_2"), as: answer}],
+["control-item2", q, {q: question_text("practice_3"), as: answer}],
 
-["control-item3", q, {q: question_text("practice_2"), as: answer}],
+["control-item3", q, {q: question_text("practice_3"), as: answer}],
 
-["control-item4", q, {q: question_text("practice_2"), as: answer}],
+["control-item4", q, {q: question_text("practice_3"), as: answer}],
 
-["control-item5", q, {q: question_text("practice_2"), as: answer}],
+["control-item5", q, {q: question_text("practice_3"), as: answer}],
 
-["control-item6", q, {q: question_text("practice_2"), as: answer}]
+["control-item6", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item7", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item8", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item9", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item10", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item11", q, {q: question_text("practice_3"), as: answer}],
+
+["control-item12", q, {q: question_text("practice_3"), as: answer}]
 
 ];
