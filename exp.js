@@ -1,6 +1,8 @@
 var answer = ["1", "2", "3", "4"];
 
-var example_question_text = "<p>There are three practice items and this is the first one.</p>";
+function example_question_text(order) {
+    return "<p>There are three practice items and this is the "+order+" one.</p>";
+}
 
 function question_text(image_title) {
     var question = null;
@@ -26,13 +28,13 @@ var items = [ ["sep", "Separator", { }],
 ["intro", "Form", { html: { include: "example_intro.html" } }],
 
 ["startexp", "Message", {html: "This is the end of the practice session. The experiment begins now."}],
-["practice", q, {q: example_question_text + question_text("example_1"),
+["practice", q, {q: example_question_text("first") + question_text("example_1"),
                  as: answer, hasCorrect: false,
                  instructions: ""}],
-["practice", q, {q: example_question_text + question_text("example_2"),
+["practice", q, {q: example_question_text("second") + question_text("example_2"),
                  as: answer, hasCorrect: false,
                  instructions: ""}],
-["practice", q, {q: example_question_text + question_text("example_3"),
+["practice", q, {q: example_question_text("third") + question_text("example_3"),
                  as: answer, hasCorrect: false,
                  instructions: ""}],
 
